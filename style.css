@@ -1,0 +1,274 @@
+/*Adicionamos o estipo, sequencia 2, módulo 4, à todo o body*/
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Benefícios de usar fontes externas
+1) Padronizar o nosso conteúdo em todos os navegadores
+
+2) Deixar o site mais bonito, fora do padrão
+
+3) Termos mais alternativas de fonte*/
+
+
+header{
+	/*background: #bbbbbb;*/
+	padding: 20px 0;
+}
+
+.box{ /*Classe box*/
+	position: relative; /*Relativa ao elemento que está inclusa*/
+	width: 940px; /*Box Padrão usado na rede é 940px*/
+	margin: 0 auto; /*Alinhado div ao centro*/
+}
+
+nav{ /*lista de navegação*/
+	position: absolute;
+	top: 110px;
+	right: 0px;
+		
+}
+
+nav li{ /*Elemento da lista de navegação*/
+	display: inline;
+	margin: 0 0 0 15px; /*Espaçamento para esquerda de 15 px 'Cima Direita Baixo Esquerda - Sentido horário'*/
+}
+
+nav a{ /*Âncora da navegação*/
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px; /*Padrão é 16*/
+	text-decoration: none; /*Tira o sublinhado*/
+}
+
+nav a:hover{ /*Quando o mouse passa por cima 'hover' dos links da navegação*/
+	color: #c78c19;
+	text-decoration: underline;
+}
+
+.produtos{
+	width: 940px;
+	margin: 0 auto; /*0 pixels para cima e para baixo e auto nos lados*/
+	padding: 50px 0;
+	
+}
+
+.produtos li{
+	/*display: inline-table; /*inline-block ou inline-table tem possibilidade de ajuste de largura e altura*/
+	display: inline-block; /*box-sizing: border-box; só funciona com este, table não funciona*/
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	/*background-color: #cccccc;*/
+	margin: 0 1.5%;
+	padding: 30px 20px; /*Espaçamento, aumenta o tamanho do elemento sem usar o border-box*/
+	box-sizing: border-box; /*O tamanho do box é com margem*/
+	/* border-color: #000000;
+	border-width: 2px; /*Podemos configurar todos os lados das bordas 'border-LADO-width:'
+	border-style: solid; /*solid, dashed, dotted*/
+	border: 2px solid #000000;/*Usando esse economizamos código, borda fica entre padding e margin*/
+	border-radius: 10px; /*pode usar por borda border-top-left por exemplo*/
+}
+
+.produtos li:hover{ /*Quando o mouse passa por cima 'hover' dos produtos*/
+	/* color: #c78c19; */
+	border-color: #c78c19;
+}
+
+.produtos li:hover h2{ /*Altera h2*/
+	font-size: 35px;
+}
+
+.produtos li:active{ /*Quando o mouse seleciona os produtos*/
+	color: #c78c19;
+}
+
+.produtos h2{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.produto-descricao{
+	font-size: 18px;
+}
+
+.produto-preco{
+	font-weight: bold;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+footer{
+	text-align: center;
+	/*background-color: #cccccc*/
+	background-image: url("bg.jpg"); /*É um quadrado pequeno que é replicado até completar a largura da tela*/
+	/*background-repeat: repeat-x ou -y*/
+	padding: 40px 0;	
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+/*É possivel alterar todos os elementos de uma página, do ponto de vista visual, com o CSS
+	*{} aplica regras a todos os elementos do html*/
+
+/*aqui começamos com o estilo para a página de contato*/
+
+main{
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+form{
+	margin: 40px 0; /*Superior e inferior com 40 e zero nas laterais*/
+}
+
+/*Os campos do from são do tipo inline e só ocupam o tamanho específico
+	diferente do caso dos elementos do tipo block
+	tranformaremos em block*/
+
+/*As melhores formas de replicar estilos são separedos por virgula...*/
+form label, form p, fieldset legend{
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px; /*Ficará entre label e input*/
+}
+
+form select{
+	font-size: 15px;
+	width: 20%;
+}
+
+form div{
+	margin-bottom: 20px;
+}
+
+form fieldset{
+	margin-bottom: 20px;
+}
+
+/* ... ou por classes como abaixo
+	form input, form textarea{ /*Inclui o botão de submit por causa do input*/
+.input-in-blocks{
+	display: block;
+	margin-bottom: 20px; /*Ficará entre input e label*/
+	padding: 10px 25px; /*Espaçamento interno para alargar o input 
+						(espaço interno do elemento entre borda e conteúdo)*/
+	width: 50%;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+#submit{
+	width: 40%;
+	padding: 10px 0;
+	background-color: orange;
+	color: white; /*da fonte*/
+	font-weight: bold;
+	font-size: 18px;
+	/*border: none;*/
+	border-radius: 5px;
+	/*transition: 1s background; /*Só a partir do CSS 3 - ÓTIMO!!!*/
+	transition: 1s all;
+	cursor: pointer;
+}
+
+#submit:hover{
+	background-color: rgb(70, 55, 37);
+	/*transform: scale(1.1);
+	transform: rotate(10deg); esta última perde o efeito*/
+	transform: scale(1.1) rotate(360deg);
+}
+
+table{
+	margin: 20px 0 40px 0;
+}
+
+thead{
+	background: orange;
+	font-weight: bold;
+	color: white;
+}
+
+td,th{
+	border: 1px solid #000000;
+	/*padding: 5px 10px 5px 10px;*/
+	padding: 5px 10px;
+	text-align: center;
+}
+
+/*-------------------------css da página inicial-----------------------------------*/
+.banner{
+	width: 100%;
+}
+
+/*Não é um bom título pq poe comportamento no nome*/
+.titulo-principal{
+	text-align: center;
+	font-size: 2em; /*em é em relação a fonte base*/
+	margin: 0 0 1em;
+	/*Adicionamos a propriedade para ficar imune a alteração do float da imagem*/
+	clear: both;
+}
+
+.principal p{
+	margin: 0 0 1em;
+}
+
+.principal strong{
+	font-weight: bold;	
+}
+
+.principal em{
+	font-style: italic;
+}
+
+.imagembeneficios{
+	width: 60%;
+}
+
+/*Poderia mudar para um in-line block, na intenção de coloca-lo no lugar, ao lado do parágrafo, e com ele tbm, 
+ mas o que queremo não é isso, nem display, nem position, então vamos com o float*/
+.utensilios{
+	float: left;
+	/* width: 150px; */
+	width: 120px;
+	margin: 0 20px 20px 0; /*DIreções no sentido horário e començando de cima!*/
+}
+
+/*Section mapa com essas caracteristicas*/
+.mapa{
+	padding: 3em 0; /*3x fonte para cima e para baixo e 0 para as laterais*/
+}
+
+.mapa p{
+	text-align: center;
+	margin: 0 0 2em;
+}
+
+.video{
+	width: 560px;
+	margin: 1em auto;
+}
+
+
+/*Quanto mais especícifo dentro do css maior a força do caso
+	desta forma, a força da hierarquia no css:
+
+	1.tag (EX: p{})
+	2.tag dentro de tag (EX: form p{})
+	10.classe (EX: .classe{})
+	11.tag com classe específica (EX: p.classe{})
+	100.id (EX: #id{})
+	1000. Estilo adicionado inline no código html (EX: <p style="color:blue"></p>)
+	
+	Visitar este site: http://mobileinputtypes.com/ 
+
+maior a força, vai se sobressair em relação aos outros!*/

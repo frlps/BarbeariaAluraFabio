@@ -1,0 +1,110 @@
+/*Folha de estilo antiga usada na principal (index)*/
+
+header{
+	padding: 20px 0;
+}
+
+.box{
+	position: relative; /*Relativa ao elemento que está inclusa*/
+	width: 940px; /*Box Padrão usado na rede é 940px*/
+	margin: 0 auto; /*Alinhado div ao centro*/
+}
+
+nav{ /*lista de navegação*/
+	position: absolute;
+	top: 110px;
+	right: 0px;
+}
+
+nav li{ /*Elemento da lista de navegação*/
+	display: inline;
+	margin: 0 0 0 15px; /*Espaçamento para esquerda de 15 px 'Cima Direita Baixo Esquerda - Sentido horário'*/
+}
+
+nav a{ /*Âncora da navegação*/
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px; /*Padrão é 16*/
+	text-decoration: none; /*Tira o sublinhado*/
+}
+
+nav a:hover{ /*Quando o mouse passa por cima 'hover' dos links da navegação*/
+	color: #c78c19;
+	text-decoration: underline;
+}
+
+main{
+	background-image: url("beneficios.jpg");
+}
+
+.principal{
+	padding: 30px;
+}
+
+.titulo-principal {
+	padding-left: 20px;
+}
+
+h2{
+	font-size: 30px;
+}
+
+.titulo-centralizado {
+	text-align: center;
+	padding-bottom: 15px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+
+.principal p{
+	color: #ffffff;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#missao { /*Pelo id, neste caso missao*/
+	font-size: 20px;
+	padding: 30px 0 30px 0; 
+}
+
+#missao:hover{
+	font-size: 30px;
+
+}
+
+#missao strong:hover{
+	color: #FF0000;
+}
+
+.lista-beneficios {
+	text-align: center;
+	padding-bottom: 30px:
+}
+
+.lista-beneficios li{
+	font-style: italic;
+	color: #ffffff;
+	padding-left: 15px;
+	font-size: 20px;
+}
+
+.lista-beneficios li:hover{
+	font-size: 25px;
+	color: #FF0000;
+}
+
+footer{
+	text-align: center;
+	background-image: url("bg.jpg"); /*É um quadrado pequeno que é replicado até completar a largura da tela*/
+	padding: 40px 0;	
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+/*x:visited{}, x:hover{}, x:link{}, x:active{}*/
